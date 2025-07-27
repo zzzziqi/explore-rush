@@ -1,0 +1,16 @@
+{
+  "name": "@monorepo-demo/backend",
+  "version": "1.0.0",
+  "description": "Backend application",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "echo 'Starting backend dev server'",
+    "build": "echo 'Building backend'",
+    "test": "echo 'Testing backend'"
+  },
+  "dependencies": {
+    "@monorepo-demo/shared": "workspace:*"
+  },
+  "devDependencies": {}
+}

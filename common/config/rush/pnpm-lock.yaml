@@ -1,0 +1,23 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: false
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  ../../apps/backend:
+    dependencies:
+      '@monorepo-demo/shared':
+        specifier: workspace:*
+        version: link:../../libs/shared
+
+  ../../apps/frontend:
+    dependencies:
+      '@monorepo-demo/shared':
+        specifier: workspace:*
+        version: link:../../libs/shared
+
+  ../../libs/shared: {}
