@@ -2,11 +2,14 @@
   "name": "@monorepo-demo/shared",
   "version": "1.0.0",
   "description": "Shared utilities and types",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "echo 'Building shared library'",
-    "test": "echo 'Testing shared library'"
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "type-check": "tsc --noEmit"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
 }
